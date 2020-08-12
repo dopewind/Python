@@ -1,3 +1,11 @@
 {
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "cSpell.words": [
+        "doin"
+    ],
+    "cSpell.enableFiletypes": [
+        "ahk",
+        "dockerfile",
+        "fsharp"
+    ]
 }

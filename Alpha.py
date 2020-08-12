@@ -10,6 +10,13 @@ from pynput import keyboard     # for the keyboard shortcuts
 
 # pip install pynput
 
+
+#------------------------------------lists----------------------------------------------
+
+greetings_as_intentions = [
+    'hi','hello','hey','hola','hey there',"heylo"
+]
+
 #------------------------------------------------- FUNCTIONS -------------------------------------------------
 
 # define our clear function 
@@ -110,6 +117,8 @@ current = set()
 #     listener.join()
 
 
+
+
 # ----------------------- ACTUAL PROGRAM ---------------------------------
 
 clear()
@@ -175,4 +184,11 @@ typing_effect_ideal("What are you really here for?")
 
 real_intention = input("--->")
 
+#typing_effect_ideal_line("Now this is why you came here for real ?  ----->  ")
+#typing_effect_ideal_line("\"")
+#typing_effect_ideal(real_intention)
+#typing_effect_ideal_line("\"")
 
+
+if real_intention in greetings_as_intentions:
+    typing_effect_ideal("How you doin'?")
