@@ -11,10 +11,18 @@ from pynput import keyboard     # for the keyboard shortcuts
 # pip install pynput
 
 
+<<<<<<< HEAD
 #------------------------------------lists----------------------------------------------
 
 greetings_as_intentions = [
     'hi','hello','hey','hola','hey there',"heylo"
+=======
+#---------------------------------------LISTS-----------------------------------------------------
+
+greetings = [
+        'hi','hello','hyllo','nice to see you','good morning','good evening','good night','good afternoon'
+
+>>>>>>> 0fb61d115e405282a382ab766e15c032f20bdc53
 ]
 
 #------------------------------------------------- FUNCTIONS -------------------------------------------------
@@ -123,6 +131,20 @@ current = set()
 
 clear()
 
+typing_effect_ideal("Hello")
+
+sleep_clear()
+
+typing_effect_ideal("Just keep in mind that I'm just a stupid piece of code and AM NOT as samrt as you")
+
+sleep_clear()
+
+typing_effect_ideal("Yeah,       I meant it")
+
+sleep_clear()
+
+
+
 name_input()
 #pass_input()
 
@@ -166,9 +188,9 @@ typing_effect_ideal("Why'd I ask?   Just to make conversation ")
 sleep_clear()
 
 typing_effect_ideal_line("Now this is why you came here ?  ----->  ")
-typing_effect_ideal_line("\"")
+#typing_effect_ideal_line("\"")
 typing_effect_ideal(the_reason)
-typing_effect_ideal_line("\"")
+#typing_effect_ideal_line("\"")
 
 sleep_clear()
 
