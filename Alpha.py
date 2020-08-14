@@ -11,18 +11,10 @@ from pynput import keyboard     # for the keyboard shortcuts
 # pip install pynput
 
 
-<<<<<<< HEAD
 #------------------------------------lists----------------------------------------------
 
 greetings_as_intentions = [
     'hi','hello','hey','hola','hey there',"heylo"
-=======
-#---------------------------------------LISTS-----------------------------------------------------
-
-greetings = [
-        'hi','hello','hyllo','nice to see you','good morning','good evening','good night','good afternoon'
-
->>>>>>> 0fb61d115e405282a382ab766e15c032f20bdc53
 ]
 
 #------------------------------------------------- FUNCTIONS -------------------------------------------------
