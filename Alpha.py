@@ -17,6 +17,13 @@ greetings_as_intentions = [
     'hi','hello','hey','hola','hey there',"heylo"
 ]
 
+goodbyes_as_intentions = [
+    'bye','see ya','see you','see you later','goodbye'
+
+]
+
+
+
 #------------------------------------------------- FUNCTIONS -------------------------------------------------
 
 # define our clear function 
@@ -127,7 +134,7 @@ typing_effect_ideal("Hello")
 
 sleep_clear()
 
-typing_effect_ideal("Just keep in mind that I'm just a stupid piece of code and AM NOT as samrt as you")
+typing_effect_ideal("Just keep in mind that I'm just a stupid piece of code and AM NOT as smart as you")
 
 sleep_clear()
 
@@ -135,7 +142,9 @@ typing_effect_ideal("Yeah,       I meant it")
 
 sleep_clear()
 
+typing_effect_ideal("And just so that me are clear, please use proper grammar")
 
+sleep_clear()
 
 name_input()
 #pass_input()
@@ -150,7 +159,8 @@ typing_effect_ideal("Hello another random user")
 print("\n")
 
 typing_effect_ideal("Please don't be fooled by my initial courteous language, I can get very annoying, as you saw with all the typing effects")
-clear()
+
+sleep_clear()
 
 typing_effect_really_fast("I can go really fast like this")
 
@@ -206,3 +216,7 @@ real_intention = input("--->")
 
 if real_intention in greetings_as_intentions:
     typing_effect_ideal("How you doin'?")
+
+else:
+    if real_intention in goodbyes_as_intentions:
+        typing_effect_ideal("See ya later")
