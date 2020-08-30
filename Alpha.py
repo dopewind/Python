@@ -4,7 +4,7 @@ import sys                            # for  typing effect
 from os import system, name           # for clearing screen
 from time import sleep                # for showing output for some time period 
 from subprocess import call           # import call method from subprocess module
-from pynput import keyboard     # for the keyboard shortcuts              
+# from pynput import keyboard     # for the keyboard shortcuts              
 
 #------------------------------------installs-----------------------------------
 
@@ -22,7 +22,10 @@ goodbyes_as_intentions = [
 
 ]
 
+ai_qn_as_intentions = [
+    'who are you?','who are you','are you human','are you human?'
 
+]
 
 #------------------------------------------------- FUNCTIONS -------------------------------------------------
 
@@ -42,15 +45,12 @@ def sleep_clear():
     sleep(1.5)
     clear()
 
-def name_input():
-    typing_effect_ideal("What's your name?")
-    name = input('Name = ')
-    print("")
 
 
-def pass_input():
-    typing_effect_ideal("Enter your password. Keep in mind that your password won't be visible on your screen as you type it")
-    password = getpass.getpass("Password = ")
+
+# def pass_input():
+#    typing_effect_ideal("Enter your password. Keep in mind that your password won't be visible on your screen as you type it")
+#    password = getpass.getpass("Password = ")
 
 def typing_effect_really_fast(texts):
     for char in texts:
@@ -96,7 +96,7 @@ def typing_effect_ideal_line(texts):
 
 
 # The currently active modifiers
-current = set()
+# current = set()
 
 # # The key combination to check
 # COMBINATIONS = [
@@ -123,7 +123,19 @@ current = set()
 # with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
 #     listener.join()
 
+def name_input():
+    name =''
+    typing_effect_ideal("What's your name?")
+    name = input('Name = ')
+    print("")
+    typing_effect_ideal_line("You call yourself ")
+    typing_effect_ideal(name)
 
+    sleep_clear()
+
+    typing_effect_ideal("Noice")
+
+    sleep_clear()
 
 
 # ----------------------- ACTUAL PROGRAM ---------------------------------
@@ -134,7 +146,7 @@ typing_effect_ideal("Hello")
 
 sleep_clear()
 
-typing_effect_ideal("Just keep in mind that I'm just a stupid piece of code and AM NOT as smart as you")
+typing_effect_ideal("Just keep in mind that I'm just a stupid piece of code and I AM NOT as smart as you")
 
 sleep_clear()
 
@@ -142,14 +154,15 @@ typing_effect_ideal("Yeah,       I meant it")
 
 sleep_clear()
 
-typing_effect_ideal("And just so that me are clear, please use proper grammar")
+typing_effect_ideal("And just so that we are clear, please use proper grammar")
 
 sleep_clear()
 
 name_input()
 #pass_input()
 
-clear()
+
+
 
 # just providing a separator for fun
 typing_effect_really_fast("-------------------------------------------------------------------------------------------------------")
