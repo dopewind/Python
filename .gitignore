@@ -1,2 +1,10 @@
 
 .vscode/
+Alpha.spec
+__pycache__/Alpha.cpython-38.pyc
+build/
+dist/
+warp scripts/__pycache__/
+warp scripts/build/
+warp scripts/dist/
+warp scripts/wp-plus.spec
