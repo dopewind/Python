@@ -5,6 +5,11 @@ from os import system, name           # for clearing screen
 from time import sleep                # for showing output for some time period 
 from subprocess import call           # import call method from subprocess module
 # from pynput import keyboard     # for the keyboard shortcuts              
+import signal, os
+
+def handler(signum, frame):
+    print ('You didn\'t say the magic word'), signum
+
 
 #------------------------------------installs-----------------------------------
 
@@ -125,16 +130,24 @@ def typing_effect_ideal_line(texts):
 
 def name_input():
     name =''
-    typing_effect_ideal("What's your name?")
-    name = input('Name = ')
-    print("")
+    while True:
+        try:
+           typing_effect_ideal("What's your name?")
+           name = input('Name = ')
+           print('')
+        except ValueError:
+            typing_effect_ideal('Say what now?')
+            sleep_clear()
+        if name in ['','1','2','3','4','5','6','7','8','9','0']:
+            typing_effect_ideal('Gotta spill it dude')
+            sleep_clear()
+            continue
+        else:
+            break
     typing_effect_ideal_line("You call yourself ")
     typing_effect_ideal(name)
-
     sleep_clear()
-
     typing_effect_ideal("Noice")
-
     sleep_clear()
 
 
@@ -180,6 +193,21 @@ typing_effect_really_fast("I can go really fast like this")
 sleep_clear()
 
 typing_effect_really_slow("and really slow like this")
+
+sleep_clear()
+
+typing_effect_ideal("Or as slow at it gets, but I think you get the idea")
+
+sleep_clear()
+
+typing_effect_ideal("So if you aren't ready for this, kill me now before you start regretting it")
+
+sleep_clear()
+
+typing_effect_really_slow("3......2.........1......")
+
+# Set the signal handler
+signal.signal(signal.SIGINT, handler)
 
 sleep_clear()
 
