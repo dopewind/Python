@@ -8,3 +8,4 @@ warp scripts/__pycache__/
 warp scripts/build/
 warp scripts/dist/
 warp scripts/wp-plus.spec
+log.txt
