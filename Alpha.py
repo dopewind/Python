@@ -1,12 +1,12 @@
 #  all the imports
-import getpass                        # for entering the password
+# import getpass                        # for entering the password
 import sys                            # for  typing effect
 from os import system, name           # for clearing screen
 from time import sleep                # for showing output for some time period
-from subprocess import call           # import call method from subprocess module
+# from subprocess import call           # import call method from subprocess module
 # from pynput import keyboard            # for the keyboard shortcuts
 import signal
-import os
+# import os
 import subprocess
 import random
 
